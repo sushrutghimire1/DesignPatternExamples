@@ -7,6 +7,5 @@ public class Main {
         MyHouseBuilder myHouseBuilder = new MyHouseBuilder();
         MyHouse myHouse = myHouseBuilder.buildBasement().buildRoof(10).buildGarden().build();
         myHouse.getDetails();
-
     }
 }
