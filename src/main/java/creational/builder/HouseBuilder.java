@@ -1,13 +1,12 @@
 package creational.builder;
 
-public class HouseBuilder extends House{
-    protected boolean roofNeeded;
-    protected int sizeOfRoof;
+public interface HouseBuilder {
+    MyHouseBuilder buildBasement();
 
-    public HouseBuilder() {
-    }
+    MyHouseBuilder buildGarden();
 
-    public House build(){
+    MyHouseBuilder buildRoof(int roofSize);
 
-    }
+    MyHouse build();
+
 }
