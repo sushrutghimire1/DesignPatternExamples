@@ -1,8 +1,8 @@
 package structural.facade;
 
 public class ShapeMaker {
-    private Shape circle;
-    private Shape square;
+    private final Shape circle;
+    private final Shape square;
 
     public ShapeMaker() {
         circle = new Circle();
