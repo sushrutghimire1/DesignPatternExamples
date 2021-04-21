@@ -14,6 +14,13 @@ public class CarPrototypeFactory {
         return (prototypes.get(s)).clone();
     }
 
+    public static void loadCache() {
+        CarPrototype prototype1 = new BMWCar();
+        prototypes.put(ModelType.BMW,prototype1);
+        CarPrototype prototype2 = new PorscheCar();
+        prototypes.put(ModelType.PORSCHE,prototype2);
+    }
+
     public static class ModelType {
         public static final String BMW = "bmw";
         public static final String PORSCHE = "porsche";
